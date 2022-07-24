@@ -1,6 +1,6 @@
-#Sentiment Analysis
+# Sentiment Analysis
 
-This project concentrates on a topic in Natural Language Processing: "Sentiment Analysis", where we aim to find the underlying sentiment of a given text. For this project, the data from car reviews will be used to train and test the models. Two models: Naive Bayes and Support Vector Machine are used to predict the sentiment. Towards the end of the project, a brief comparison of both the models and the final verdict on the winning models is provided.
+This project concentrates on a topic in Natural Language Processing: `Sentiment Analysis`, where we aim to find the underlying sentiment of a given text. For this project, the data from car reviews will be used to train and test the models. Two models: `Naive Bayes` and `Support Vector Machine` are used to predict the sentiment. Towards the end of the project, a brief comparison of both the models and the final verdict on the winning models is provided.
 
 ## Phases of the project:
 - Exploratory Data Analysis
