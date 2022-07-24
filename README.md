@@ -24,4 +24,8 @@ This project concentrates on finding the underlying sentiment of a car review. T
 [Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/machine_learning/sentiment_analysis)
 
 ### [Project: Noughts and Cross (Tic-Tac-Toe)](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/tic_tac_toe)
-<img src="https://camo.githubusercontent.com/d2b5192b2473eb82a5e1473c1c0fa31bf4e7ff8f2a4d25e2853285ab81a8d457/68747470733a2f2f7468756d62732e6766796361742e636f6d2f556e73756e67496e636f6d706c6574654369636164612d73697a655f726573747269637465642e676966" width=85% height=50%>
+<img src="https://camo.githubusercontent.com/d2b5192b2473eb82a5e1473c1c0fa31bf4e7ff8f2a4d25e2853285ab81a8d457/68747470733a2f2f7468756d62732e6766796361742e636f6d2f556e73756e67496e636f6d706c6574654369636164612d73697a655f726573747269637465642e676966" width=80% height=40%>
+
+The objective of this project is create a small AI which has the ability to play noughts and crosses using MiniMax Algorithm.
+
+[Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/tic_tac_toe)
