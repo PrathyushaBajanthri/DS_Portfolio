@@ -17,5 +17,8 @@ This objective of this project is to develop a light-weight web application usin
 [Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
 
 ### [Project: Sentiment Analysis](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/machine_learning/sentiment_analysis)
+This project concentrates on finding the underlying sentiment of a car review. Two models are using in this project, Naive Bayes and SVM models. Their performances are critically analysed to figure out which model performers better using Confusion matrix.
+
+[Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/machine_learning/sentiment_analysis)
 
 ### [Project: Noughts and Cross (Tic-Tac-Toe)](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/tic_tac_toe) 
