@@ -17,7 +17,7 @@ This objective of this project is to develop a light-weight web application usin
 [Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
 
 ### [Project: Sentiment Analysis](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/machine_learning/sentiment_analysis)
-<img src="https://h2oai.github.io/tutorials/natural-language-processing-sentiment-analysis/img/ecc3ddedae3c6e65.jpg" width=85% height=30%>
+<img src="https://h2oai.github.io/tutorials/natural-language-processing-sentiment-analysis/img/ecc3ddedae3c6e65.jpg" width=65% height=30%>
 
 This project concentrates on finding the underlying sentiment of a car review. Two models are using in this project, Naive Bayes and SVM models. Their performances are critically analysed to figure out which model performers better using Confusion matrix.
 
