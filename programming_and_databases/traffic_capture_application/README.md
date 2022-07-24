@@ -14,24 +14,23 @@ I have used SQLite as the database and designed database, tables to hold user in
 
 Please follow the below instructions to run the script setup_database.py in this repo.
 
-Command to run: python3 setup_database.py
+Command to run: `python3 setup_database.py`
 
-This python script will create the intial_databse.db and set up all the tables: user_details, session_details and traffic_details which are necessary for the application script server.py.
+This python script will create the intial_databse.db and set up all the tables: `user_details`, `session_details` and `traffic_details` which are necessary for the application script server.py.
 
-The "initial_database.db" file has been provided in the zip file, so it is not necessary to run this script unless there is a problem with provided DB file.
+The `initial_database.db` file has been provided in the repo, so it is not necessary to run this script unless there is a problem with provided DB file.
 
 ## Running this application
+To start the application run the `server.py` using the below command example.
 
-Command to run: python3 server.py
-
-To start the application run the server.py using the above command example. 
+Command to run: `python3 server.py`
 
 If you have visual studio code available in your local, running the application using visual studio code is an easier way. Open this folder into your visual studio code and run it.
 
-Application URL: http://127.0.0.1:8081
+Application URL: `http://127.0.0.1:8081`
 
 ## Database Specifications:
-The application uses an SQLite3 database named initial_database.db with the below tables:
+The application uses an SQLite3 database named `initial_database.db` with the below tables:
 - user_details:
 
 | column   | user | password |
@@ -60,14 +59,14 @@ This table has 8 columns to record the details of traffic details of a specific 
 The functionality of the application like login, logout, the addition of records, undo of records, summary and navigation is handled through several functions in the server.py file. A brief description of each function and relevant checks that are being made by the function are given below.
 
 - Login:
-The user login is being handled by the function handle_login_request() which in turn calls the function handle_validate() to make sure if there is an existing session of the user which is trying to login, if so the existing session of the user will be terminated and user will be asked to do a fresh login. If in case the user trying to login does not have any existing session, the application will check will do the following checks in the below sequence:
+The user login is being handled by the function `handle_login_request()` which in turn calls the function handle_validate() to make sure if there is an existing session of the user which is trying to login, if so the existing session of the user will be terminated and user will be asked to do a fresh login. If in case the user trying to login does not have any existing session, the application will check will do the following checks in the below sequence:
 	- checks if the user has provided both username and password, return a message on login page “Invalid username/password” in case any of these inputs are not provided
 	- queries the password for the input username from user_details table and cross verify if it matches with the input password using the function verify_password()
-	- the user is only allowed to login once the verify_password() successfully validates the input password with the password that was stored in the user_details table
+	- the user is only allowed to login once the `verify_password()` successfully validates the input password with the password that was stored in the user_details table
 	- once the user is logged into the application, a session id – magic will be assigned and recorded in the session_details table along with the start time of the session
 
 - Recording a vehicle: 
-This functionality is being handled by the function handle_add_request() which also checks if the current session for the user is valid through handle_validate() and records the vehicle to traffic_details table in steps of the below sequence:
+This functionality is being handled by the function `handle_add_request()` which also checks if the current session for the user is valid through handle_validate() and records the vehicle to traffic_details table in steps of the below sequence:
 	- checks if the location has been provided by the user in two scenarios:
 	- if the location value is NULL
 	- if the location value is blank (contains only whitespaces)
@@ -76,16 +75,16 @@ returns a message “Missing location” or “Must Specify Location” in case 
 	- for every entry into the table, the total number of entries made in the current session will also be displayed
 
 - Undo record of a vehicle:
-The application provides the user with the feasibility to revert the entry that has been made in the current session provided the vehicle type, location and occupancy. The function handle_undo_request() handles this functionality to undo the record of a vehicle in the below sequence:
+The application provides the user with the feasibility to revert the entry that has been made in the current session provided the vehicle type, location and occupancy. The function `handle_undo_request()` handles this functionality to undo the record of a vehicle in the below sequence:
 	- checks if the values of location, vehicle type and occupancy are provided. If the values are found to be NULL, it returns a message prompting the user to provide necessary input.
 	- If the above check is performed successfully, the function queries the database to check if the table traffic_details has the record matching the vehicle type, location and occupancy by the current user in the ongoing session. In case of empty results are found, the user will be displayed an appropriate message
 	- Once the two checks mentioned above passed, the record for the vehicle as requested by the user will be undone by setting the value of undo_flag to 1 and the time when the undo operation was performed will be noted in session_undo column
 
 - Summary of current session:
-The user will be provided with a summary of the activity that took place as part of the session giving options to either add more traffic or logout from the current session. This is handled by the function handle_summary_request(). This function queries the traffic_details table and fetches the count of all the types of vehicles that are recorded in the current session into a dictionary, which is shown as a brief summary
+The user will be provided with a summary of the activity that took place as part of the session giving options to either add more traffic or logout from the current session. This is handled by the function `handle_summary_request()`. This function queries the traffic_details table and fetches the count of all the types of vehicles that are recorded in the current session into a dictionary, which is shown as a brief summary
 
 - Logout:
-The user logout is being handled by the function handle_logout_request() which records the session ending time to session_end column, removing the session cooking (magic) from the session_detail table and redirecting the user to login page
+The user logout is being handled by the function `handle_logout_request()` which records the session ending time to session_end column, removing the session cooking (magic) from the session_detail table and redirecting the user to login page
 Measure took to prevent errors/malicious input behaviour:
 	- A robust login mechanism has been kept in place to make sure the access to the application is done in a controlled manner by implementing the below:
 	- Hashed stored password – The passwords of the users are stored in the database in a secured manner by encoding them using hashlib
@@ -96,4 +95,5 @@ Measure took to prevent errors/malicious input behaviour:
 
 
 Programming Language: Python3
+
 Database: SQLite3
