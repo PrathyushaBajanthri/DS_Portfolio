@@ -9,9 +9,12 @@ In this repository, you will find a compilation of my projects and case studies 
 
 This case study concentrates on NLP topics: `Low Resource Language Translation` exploring `Domain Adaptation`. The main goal of the project is to develop a Neural Machine Translation model `(transformer)` which can translate text from a High Resource Language to Low Resource Language. This model is also trained with medical domain data using a finetuning technique called domain adaptation. The transformer model is implemented using a `PyTorch` based framework `JoeyNMT`, text pre-processing using sacremoses, indic-nlp-library and subword-nmt libraries. This project has many experiments to train the model from source to target language and viceversa. A critical analysis of models perfomance in various stages of development is presented.
 
-[Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/work-in-progress/deep_learning/low_resource_language_translation)
+[Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/deep_learning/low_resource_language_translation)
 
-### [Case Study: Traffic Capture Application](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
+### [Project: Traffic Capture Application](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
+This objective of this project is to develop a light-weight web application using Python to capture traffic. Features like `user authentication`, `password hashing`, `session management` and display of `user related summary` are implemented. SQLite is used database for this application. A detailed description of code and database design is provided in the [README](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application/README.md) of the project.
+
+[Repository](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
 
 ### [Project: Sentiment Analysis](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/machine_learning/sentiment_analysis)
 
