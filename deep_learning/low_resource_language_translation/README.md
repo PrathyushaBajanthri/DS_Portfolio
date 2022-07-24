@@ -57,11 +57,11 @@ Libraries:
 - NumPy
 - Matplotlib
 - Seaborn
-- [JoeyNMT] (https://github.com/joeynmt/joeynmt)
+- [JoeyNMT](https://github.com/joeynmt/joeynmt)
 - opustools-pkg
-- [sacremoses] (https://github.com/alvations/sacremoses)
-- [swifter] (https://github.com/jmcarpenter2/swifter)
-- [indic-nlp-library] (https://github.com/anoopkunchukuttan/indic_nlp_library)
+- [sacremoses](https://github.com/alvations/sacremoses)
+- [swifter](https://github.com/jmcarpenter2/swifter)
+- [indic-nlp-library](https://github.com/anoopkunchukuttan/indic_nlp_library)
 
 Platform: Google Colab
 
