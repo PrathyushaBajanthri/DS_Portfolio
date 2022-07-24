@@ -1,7 +1,15 @@
-README:
-======
-Please note that the uploaded zip folder will follow the below folder structure:
+# Low Resource Language Translation using Neural Machine Translation
 
+This project concentrates on a niche topic of NLP: `Low Resource Language Translation`. As the word suggests, a language is considered as `Low Resource Language` when its online presence is considerably less. A Neural Machine Translation (NMT) system can produce better translations when it is developed using a large collection of parallel corpora. In the case, of High Resource Languages, with extensive data available in the digital format, it is comparatively easier to develop an NMT system that can perform at a state-of-the-art level.Whereas, in the case of a Low Resource Language, as the data in digital format is scarce the development of an NMT system with a state-of-the-art level requires more effort.Even though significant strides are made in Low Resource Language Translation, there is a minute gap that needs to be addressed in the case of Indian Languages.This project explores the development of an NMT system that can translate from a High Resource Language -English to a LowResource Language-Hindi. Also Finetuning, Domain Adaptation that allows the NMT system to translate data of a specific topic understanding the terminology of both source and target languages.
+
+## Data Used
+
+- EN-HI General Data: PM India Parallel Corpus (https://data.statmt.org/pmindia/)
+- EN-HI Medical Domain Data: IIT Bombay Medical Corpus (https://www.cfilt.iitb.ac.in/iitb_parallel/)
+- EN-HI Covid-19 Domain Data: Scrapped from NHS Inform COVID-19 guidelines (https://www.nhsinform.scot/translations/languages/hindi/)
+
+
+## Some Information on the Notebooks
 ```
 ├───data_preparation
 │       data_preparation_full.ipynb
@@ -42,7 +50,6 @@ Please note only demo_models jupyter notebooks will work, the rest of the notebo
 6. IITB_medical_data_preparation -> 2 documents used to clean the marked IITB corpus are provided in this folder
 7. plotting -> notebook used to generate plots which show the BLEU and PPL scores of the models during the training process.
 
-****
-NOTE
-****
-Please note that only notebooks in demo_models will work, the rest of the notebooks are for reference only
+Programming Language: Python3
+
+Libraries: Pandas, Matplotlib, Seaborn, JoeyNMT, swifter
