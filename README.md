@@ -6,7 +6,7 @@ In this repository, you will find a compilation of my projects and case studies 
 
 ### [Case Study: Low Resource Language Translation using Neural Machine Translation](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/work-in-progress/deep_learning/low_resource_language_translation)
 
-<img src="https://trungtran.io/wp-content/uploads/2019/03/attention.gif" width=80% height=50%>
+<img src="https://miro.medium.com/max/1400/1*BN2u78ce5Wfv5Za13IMGfg.gif" width=80% height=50%>
 
 ### [Case Study: Traffic Capture Application](https://github.com/PrathyushaBajanthri/DataScience_Portfolio/tree/master/programming_and_databases/traffic_capture_application)
 
