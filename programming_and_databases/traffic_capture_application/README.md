@@ -33,9 +33,10 @@ Application URL: http://127.0.0.1:8081
 ## Database Specifications:
 The application uses an SQLite3 database named initial_database.db with the below tables:
 - user_details:
-| column | user | password |
-| :---: | :---: | :---: |
-| data type | TEXT | TEXT |
+
+| column   | user | password |
+|----------|------|----------|
+| datatype | TEXT | TEXT     |
 
 This table has two columns – user and password both with a data type set to TEXT to store the username and hashed password of the users who access the application.
 
