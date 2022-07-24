@@ -41,14 +41,18 @@ The application uses an SQLite3 database named initial_database.db with the belo
 This table has two columns – user and password both with a data type set to TEXT to store the username and hashed password of the users who access the application.
 
 - session_details:
-column	user	magic (session id)	session_start	session_end
-data type	TEXT	INT				DATETIME		DATETIME
+
+| column   | user | magic (session_id) | session_start | session_end |
+|----------|------|--------------------|---------------|-------------|
+| datatype | TEXT | TEXT               | DATETIME      | DATETIME    |
 
 This table has four columns – user, magic (session id), session_start and session_end with data types TEXT, INT, DATETIME and DATETIME, respectively. As the column names suggest themselves this table will hold the details of the current session once a user login to the application. It keeps track of the session id and start, end times of the current session.
 
 - traffic_details:
-column	user	magic	location	type	occupancy	traffic_recorded	traffic_undo	undo_flag
-data type	TEXT	INT	TEXT		TEXT	INT		DATE TIME		DATE TIME		INT
+
+| column   | user | magic (session_id) | location | type | occupancy | traffic_recorded | traffic_undo | undo_flag |
+|----------|------|--------------------|----------|------|-----------|------------------|--------------|-----------|
+| datatype | TEXT | TEXT               | TEXT     | TEXT | INT       | DATETIME         | DATETIME     | INT       |
 
 This table has 8 columns to record the details of traffic details of a specific vehicle owned by a specific user. The columns are – user, magic, location, type, occupancy, traffic_recorder, traffic_undo and undo_flag with data types TEXT, INT, TEXT, TEXT, TEXT, DATETIME, DATETIME and INT, respectively. This table holds information about the type of vehicle and the occupancy, the location and the exact time where it was recorded. If the user wanted to undo the vehicle, the columns traffic_undo will be populated with the time when undo operation was performed and undo_flag will be set to ‘1’ so that undone records can be distinguished.
 
